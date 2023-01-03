@@ -1,0 +1,431 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+::-moz-selection {
+  background: #202f37;
+  color: white;
+}
+
+::selection {
+  background: #202f37;
+  color: white;
+}
+
+#wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#wrapper #sideNavbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100%;
+}
+
+#wrapper #sideNavbar .navbar {
+  padding: 0;
+}
+
+#wrapper #sideNavbar .navbar .navbar-nav {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#wrapper #sideNavbar .navbar .navbar-nav .nav-item {
+  width: 100%;
+  margin-bottom: 4px;
+  background: white;
+  -webkit-box-shadow: inset 0px 0px 7px 5px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 0px 7px 5px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+#wrapper #sideNavbar .navbar .navbar-nav .nav-item .nav-link {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  color: #242424;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+#wrapper #sideNavbar .navbar .navbar-nav .nav-item .nav-link img {
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+#wrapper #sideNavbar .navbar .navbar-nav .nav-item.active {
+  background: #DA3646;
+  -webkit-box-shadow: inset 0px 0px 7px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0px 0px 7px 5px rgba(0, 0, 0, 0.3);
+}
+
+#wrapper #sideNavbar .navbar .navbar-nav .nav-item.active .nav-link {
+  color: white;
+}
+
+#wrapper #mainContainer {
+  margin-left: 100px;
+  width: 100%;
+}
+
+#wrapper #mainContainer .header {
+  padding: 15px 20px;
+  background: #027893;
+  position: relative;
+}
+
+#wrapper #mainContainer .header .profile {
+  position: absolute;
+  right: 50px;
+  top: 20px;
+}
+
+#wrapper #mainContainer .header .profile a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
+#wrapper #mainContainer .header .profile img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#wrapper #mainContainer .header h2 {
+  font-size: 24px;
+  text-transform: capitalize;
+  color: white;
+  margin: 0;
+}
+
+#wrapper #mainContainer .header h4 {
+  margin-top: 5px;
+  font-size: 18px;
+  color: #1b1b1b;
+}
+
+#wrapper #mainContainer .register {
+  padding: 20px 30px;
+}
+
+#wrapper #mainContainer .register .form-heading h4 {
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 10px;
+}
+
+#wrapper #mainContainer .register label {
+  font-size: 13px;
+  margin: 0;
+  text-transform: capitalize;
+  color: #636363;
+}
+
+#wrapper #mainContainer .register input, #wrapper #mainContainer .register select {
+  margin-bottom: 10px;
+  border-radius: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 14px;
+}
+
+#wrapper #mainContainer .register input:focus, #wrapper #mainContainer .register select:focus {
+  border-color: #DA3646;
+}
+
+#wrapper #mainContainer .register input[type=submit] {
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: none;
+}
+
+#wrapper #mainContainer .register .sign-up {
+  padding: 30px;
+  border: 1px solid #DA3646;
+  border-radius: 6px;
+}
+
+#wrapper #mainContainer .register .sign-up::after {
+  content: '';
+  position: absolute;
+  height: 80%;
+  width: 1px;
+  background: rgba(0, 0, 0, 0.479);
+  right: -15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+#wrapper #mainContainer .register .sign-up .image-form label {
+  text-transform: unset;
+}
+
+#wrapper #mainContainer .register .sign-up .image-form input[type=file] {
+  display: none;
+  text-transform: lowercase;
+}
+
+#wrapper #mainContainer .register .sign-up .image-form .upload {
+  cursor: pointer;
+  font-size: 13px;
+  border-radius: 0;
+}
+
+#wrapper #mainContainer .register .login {
+  padding: 30px;
+  border: 1px solid #DA3646;
+  border-radius: 6px;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 150px;
+}
+
+#wrapper #mainContainer #timeline {
+  max-width: 80%;
+  margin: 0 auto;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px 30px;
+}
+
+#wrapper #mainContainer #timeline .time-head {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#wrapper #mainContainer #timeline .time-head h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+#wrapper #mainContainer #timeline .posts .post {
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  margin: 30px 0;
+}
+
+#wrapper #mainContainer #timeline .posts .post .post-description {
+  background: #f1f1f1;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+#wrapper #mainContainer #timeline .posts .post .post-description b {
+  text-transform: capitalize;
+}
+
+#wrapper #mainContainer #timeline .posts .post .post-description img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-right: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+
+#wrapper #mainContainer #timeline .posts .post .post-description .post-time {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  text-transform: lowercase;
+  font-size: 13px;
+}
+
+#wrapper #mainContainer #timeline .posts .post .btn {
+  padding: 3px 15px;
+  -webkit-box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: inset 0px 0px 5px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .5s;
+  transition: .5s;
+  font-size: 13px;
+}
+
+#wrapper #mainContainer #timeline .posts .post .btn:hover {
+  background: #DA3646;
+  color: white;
+}
+
+#wrapper #mainContainer #search-blood {
+  max-width: 50%;
+  margin: 30px auto;
+  padding: 10px 30px;
+  border: 1px solid #DA3646;
+  border-radius: 6px;
+  height: 80%;
+  background: url(images/redbg.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+#wrapper #mainContainer #search-blood h4 {
+  text-transform: capitalize;
+  font-size: 22px;
+  text-align: center;
+  color: white;
+}
+
+#wrapper #mainContainer #search-blood .search-form {
+  margin-top: 30%;
+}
+
+#wrapper #mainContainer #search-blood .search-form label {
+  font-size: 13px;
+  margin: 0;
+  text-transform: capitalize;
+  color: #636363;
+}
+
+#wrapper #mainContainer #search-blood .search-form input, #wrapper #mainContainer #search-blood .search-form select {
+  margin-bottom: 10px;
+  border-radius: 0;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transition: .3s;
+  transition: .3s;
+  font-size: 14px;
+}
+
+#wrapper #mainContainer #search-blood .search-form input:focus, #wrapper #mainContainer #search-blood .search-form select:focus {
+  border-color: #DA3646;
+}
+
+#wrapper #mainContainer #search-blood .search-form input[type=submit] {
+  padding: 8px 20px;
+  text-transform: uppercase;
+  font-size: 14px;
+  border: none;
+}
+
+#wrapper #mainContainer .donor-header {
+  padding: 15px 20px;
+  background: #027893;
+  margin-bottom: 30px;
+}
+
+#wrapper #mainContainer .donor-header h4 {
+  margin: 0;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+  text-transform: capitalize;
+}
+
+#wrapper #mainContainer .donors-profile {
+  max-width: 90%;
+  margin: 20px auto;
+}
+
+#wrapper #mainContainer .donors-profile .col-md-3 {
+  margin-bottom: 20px;
+}
+
+#wrapper #mainContainer .donors-profile .profile {
+  padding: 15px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 15px 3px rgba(0, 0, 0, 0.2);
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#wrapper #mainContainer .donors-profile .profile:hover {
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
+}
+
+#wrapper #mainContainer .donors-profile .profile .donor-img {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+#wrapper #mainContainer .donors-profile .profile .donor-img img {
+  width: 170px;
+  height: 170px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 30px;
+}
+
+#wrapper #mainContainer .donors-profile .profile .name-prof {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#wrapper #mainContainer .donors-profile .profile .name-prof h4 {
+  text-transform: uppercase;
+  font-size: 18px;
+  margin-right: 15px;
+}
+
+#wrapper #mainContainer .donors-profile .profile .name-prof p {
+  text-transform: capitalize;
+  font-size: 13px;
+  color: #343434;
+}
+
+#wrapper #mainContainer .donors-profile .profile .infos p {
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+#wrapper #mainContainer .donors-profile .profile .infos p b {
+  font-size: 13px;
+  margin-right: 7px;
+}
+/*# sourceMappingURL=style.css.map */
